@@ -1,0 +1,52 @@
+<section style="padding: 60px 0; text-align: center; background: #111; color: white;">
+    <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 20px;">
+        Жаңа Land Cruiser 2025
+    </h2>
+    <p style="font-size: 20px; max-width: 700px; margin: 0 auto 40px;">
+        Toyota Land Cruiser — мықтылық пен сенімділіктің символы.
+    </p>
+
+    <img id="car" src="/rendering-2025-toyota-gr-land-cruiser-stick-shift-turbo-doesn-t-exist-maybe-it-should-232722_1.jpg" 
+        alt="Land Cruiser" 
+        style="width: 80%; border-radius: 10px; margin-bottom: 30px; transition: 0.5s; filter: brightness(0.6);">
+
+   
+       
+    </h3>
+    <p style="font-size: 18px; max-width: 700px; margin: 0 auto;">
+        PRICE:67,000,000 tg
+    </p>
+
+    <button onclick="engineStart()" 
+        style="margin-top: 35px; padding: 14px 28px; font-size: 18px; border: none; border-radius: 6px; cursor: pointer;">
+        Қозғалтқышты қосу
+    </button>
+
+    <p id="message" style="margin-top: 25px; font-size: 24px; font-weight: 600;"></p>
+</section>
+
+
+<audio id="engineSound">
+    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+</audio>
+
+<script>
+function engineStart() {
+    let text = "Toyota Land Cruiser 300 — бұл жаңа TNGA платформасындағы, қуатты V6 Twin-Turbo қозғалтқыштары (3.5L бензин немесе 3.3L дизель), жоғары өтімділік пен қауіпсіздікке арналған жаңартылған жол талғамайтын жүйелері бар, жол талғамайтын көлік, ол 2021 жылы Қазақстанда сатылымға шықты. ";
+    let i = 0;
+    let msg = document.getElementById("message");
+    let engineSound = document.getElementById("engineSound");
+    let car = document.getElementById("car");
+
+    msg.textContent = "";
+    engineSound.play();
+
+
+    // Текст эффекті: бір әріппен жазылады
+    let interval = setInterval(() => {
+        msg.textContent += text.charAt(i);
+        i++;
+        if (i > text.length) clearInterval(interval);
+    }, 100);
+}
+</script>

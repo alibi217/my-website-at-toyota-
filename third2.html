@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toyota Тегін Тест-Драйв</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: url('Снимок.PNG') no-repeat center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background: rgba(255,255,255,0.12);
+        padding: 40px;
+        width: 380px;
+        border-radius: 20px;
+        color: white;
+        border: 1px dashed rgba(255,255,255,0.2);
+        box-shadow: 0 0 30px rgba(0,0,0,0.4);
+        text-align: center;
+    }
+
+    .container h1 {
+        margin-top: 0;
+        font-size: 32px;
+        letter-spacing: 1px;
+        color: #e7eaee;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .container p {
+        font-size: 16px;
+        margin-bottom: 25px;
+        opacity: 0.9;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        background:#2c3e50;
+        color: white;
+        border-radius: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background: #ff4b4b;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255,0,0,0.6);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>TOYOTA</h1>
+    <p>Тегін тест-драйвқа жазылыңыз.  
+       Өз қалауыңыздағы Toyota моделін бүгін-ақ көріңіз!</p>
+
+    <form>
+        <input type="text" placeholder="Атыңыз" required>
+        <input type="tel" placeholder="Телефон нөміріңіз" required>
+
+        <select required>
+            <option selected disabled>Модельді таңдаңыз</option>
+            <option>Toyota Camry</option>
+            <option>Toyota Corolla</option>
+            <option>Toyota RAV4</option>
+            <option>Toyota Land Cruiser</option>
+            <option>Toyota Prado</option>
+        </select>
+
+        <button class="btn">Тест-драйвқа жазылу</button>
+    </form>
+</div>
+
+</body>
+</html>

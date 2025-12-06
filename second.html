@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toyota — Автосалон Алматы</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #141111;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      display: block;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ff4c4c;
+    }
+
+    section {
+      background: white;
+      margin: 25px auto;
+      padding: 30px;
+      width: 85%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color:  #2c3e50;
+      border-bottom: 3px solid  #2c3e50;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    iframe {
+      border: 0;
+      border-radius: 8px;
+      width: 100%;
+      height: 350px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 500px;
+      margin-top: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      
+    }
+
+    button:hover {
+      background-color: #ff4c4c;
+    }
+  </style>
+</head>
+<body>
+
+<header>Автосалон-Toyota Алматы</header>
+
+<nav>
+  <a href="#map">Карта</a>
+  <a href="#contact">Байланыс</a>
+</nav>
+
+<section id="map">
+  <h2>Карта — Toyota орталығы Алматы</h2>
+  <p>Біздің автосалонды төмендегі картадан таба аласыз:</p>
+
+  <iframe
+    img src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.2773850813647!2d76.86657917629389!3d43.23829397113071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836efc385f1a03%3A0x84d7dfbb51893b!2sToyota%20Center%20Almaty!5e0!3m2!1sru!2skz!4v1696865894012!5m2!1sru!2skz"
+    loading="lazy">
+  </iframe>
+</section>
+
+<section id="contact">
+  <h2>Байланыс</h2>
+  <p>Біздің бас Менеджер:</p>
+  <p>
+    <a href="/Menedzher1.html">Menedzher</a>
+  </p>
+  <p>Сұрақтарыңыз болса, төмендегі форма арқылы хабарласыңыз:</p>
+  <form>
+    <input type="text" placeholder="Атыңыз" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="4" placeholder="Хабарламаңыз"></textarea>
+<button type="submit">Жіберу</button>
+  </form>
+
+  <p><b>Мекенжай:</b> Қазақстан, Алматы</p>
+  <p><b>Телефон:</b> +7 (707) 222-50-18</p>
+  <p><b>Email:</b> info@toyota.kz</p>
+</section>
+
+
+
+
+</body>
+</html>

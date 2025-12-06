@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Toyota Creative Page</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  
+  .hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    animation: floatText 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes floatText {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-20px); }
+  }
+
+  
+  .floating-car {
+    position: absolute;
+    bottom: 20px;
+    left: -200px;
+    width: 200px;
+    animation: drive 15s linear infinite;
+  }
+
+  @keyframes drive {
+    0% { left: -200px; }
+    100% { left: 100%; }
+  }
+
+  
+  .section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .section h2 {
+    color: #e60012;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+
+  .section p {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease 0.5s forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    color: white;
+    border: 2px solid #e60012;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .button:hover {
+    background-color: #e60012;
+    transform: scale(1.1);
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Toyota Motion</h1>
+  <img src="/day-exterior-27_040-removebg-pre.png" alt="Car" class="floating-car">
+</div>
+
+<div class="section">
+  <h2>Жаңа модельдер</h2>
+  <p>Toyota әрқашан сапа мен инновацияны ұстанады. Біз сізге сенімді әрі сәнді көліктер ұсынамыз.</p>
+  <a href="/animatiion.html" class="button">Толығырақ</a>
+</div>
+
+</body>
+</html>

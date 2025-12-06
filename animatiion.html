@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Toyota Жаңа Модельдер</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  /* Анимация мәтін үшін */
+  .animated-text {
+    max-width: 700px;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    opacity: 0;
+    color: black;
+    animation: fadeUp 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes fadeUp {
+    0% { opacity: 1; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 1; transform: translateY(-20px); }
+  }
+
+  
+  .slider {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    margin: 20px 0;
+  }
+
+  .slides {
+    display: flex;
+    width: 1200px; 
+    animation: slide 16s infinite;
+  }
+
+  .slides img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-300px); }
+    45% { transform: translateX(-300px); }
+    50% { transform: translateX(-600px); }
+    70% { transform: translateX(-600px); }
+    75% { transform: translateX(-900px); }
+    95% { transform: translateX(-900px); }
+    100% { transform: translateX(0); }
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    font-size: 1.1em;
+  }
+</style>
+</head>
+<body>
+<div class="animated-text">
+  Toyota жаңа модельдері – сапа, сенімділік және стильдің символы. 
+  Әрбір көлік заманауи технологиялармен жабдықталған және әртүрлі жүргізу жағдайларына бейімделген. 
+  Біз сізге тек ыңғайлы және қауіпсіз көліктерді ұсынамыз. 
+  Жаңа Toyota – бұл тек көлік емес, бұл тәжірибе мен сенім.
+</div>
+
+<div class="slider">
+  <div class="slides">
+    <img src="/b2dd086339cbc626a8ba91cd85ad27cc (1).webp" alt="Toyota Camry">
+    <img src="/images.jpg" alt="Toyota RAV4">
+    <img src="/images (1).jpg" alt="Toyota Corolla">
+    <img src="/photo.jpg" alt="Toyota Prius">
+  </div>
+  <div class="caption">TOP MODEL</div>
+</div>
+
+<div class="animated-text">
+  Әрбір модель – заманауи дизайн, үнемді қозғалтқыш және сенімділік кепілі. 
+  Toyota әрқашан алдыңғы қатарда және сіздің әрбір сапарыңызды жайлы етеді. 
+  Біздің жаңа модельдерімізбен қалада да, табиғатта да керемет тәжірибе алуға болады.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Toyota Style</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f2f2f2;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+    .sidebar {
+        width: 30%;
+        background: white;
+        padding: 40px 30px;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+    .sidebar h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .menu-item {
+        font-size: 18px;
+        margin-bottom: 18px;
+        cursor: pointer;
+        color: black;
+        transition: 0.2s;
+    }
+
+    .menu-item:hover {
+        color:  #2c3e50;
+        transform: translateX(5px);
+    }
+
+    .content {
+        width: 70%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 48%;
+        gap: 10px;
+    }
+    .banner {
+        background-size: cover;
+        background-position: center;
+        color: white;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .banner-text {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        background-color: rgb(212, 228, 228);
+        font-size: 20px;
+        padding: 5px 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Сізді не кызықтырады?</h2>
+        <div class="menu-item"><a href="/third1.html" style="color: black; text-decoration: none;">Модель ряд</a> </div>
+
+        <hr>
+
+        <div class="menu-item"><a href="/third2.html" style="color: black; text-decoration: none;" >Тегін тест-драйв</a></div>
+
+        <hr>
+
+        <div class="menu-item"><a href="/third3.html" style="color: black; text-decoration: none;">Брошюры  және Фильтр </a></div>
+
+        <hr>
+
+        <div class="menu-item" style="margin-top:25px;"><a href="/third4.html" style="color: black; text-decoration: none;">Сервисті жоспар</a></div>
+
+        <hr>
+
+        <div class="menu-item"><a href="/third5.html" style="color: black; text-decoration: none;">Жаңа Land Cruiser 250</a></div>
+    </div>
+
+    <div class="content">
+        <div class="banner" style="background-image:url('https://scene7.toyota.eu/is/image/toyotaeurope/Go_Beyond_ru_new-1?wid=1280&fit=fit,1&ts=0&resMode=sharp2&op_usm=1.75,0.3,2,0');">
+            <div class="banner-text"> <a href="/jpg.html">Күзгі спецпредложение — толығырақ білу</a> </div>
+        </div>
+        <div class="banner" style="background-image:url('https://toyota-pavlodar.kz/media/2528/%D0%BD%D0%B0-%D1%81%D0%B0%D0%B9%D1%82-2.jpg');">
+            <div class="banner-text"><a href="/jpg2.html">Relax — толығырақ білу</a></div>
+        </div>
+        <div class="banner" style="background-image:url('https://toyota-ua.com/bundles/dcsite/img/toyota/hubrid/hybrid-new-two.jpg?v1.4.776');">
+            <div class="banner-text"><a href="/jpg3.html">Гибридттік Camry — нақтырақ</a></div>
+        </div>
+        <div class="banner" style="background-image:url('https://d8a6a33f-3369-444b-9b5f-793c13ff0708.selcdn.net/uploads/projects/toyota_centr_minsk_vostok/uploads/images/08_3_20200327-ART_6471-preview.jpg');">
+            <div class="banner-text"><a href="/jpg4.html">Жаңа мүмкіндіктер — Оқу</a></div>
+    
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+<style>
+.menu {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background:#2c3e50;
+color: white;
+padding: 20px;
+}
+</style>
+<div class="menu">меню</div>
+<video alt="Toyota Motor Kazakhstan Homepage" src="/2025_Toyota_Camry_SE AWD_SupersonicRed_Car2Car_B_Roll.mp4" style="padding: 50px; width: 100%; height: 100%;" autoplay loop controls></video>
